@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>С Днём Рождения, Мама ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #ffd6e8, #ffe8c7);
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 42px;
+        }
+        button {
+            margin: 20px 10px;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff6b81;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e0556d;
+        }
+        .message {
+            font-size: 20px;
+            max-width: 750px;
+            margin: 25px auto;
+            line-height: 1.7;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1.2s ease;
+            display: none;
+        }
+        .message.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .year-section {
+            margin-top: 40px;
+        }
+        .year-title {
+            font-size: 28px;
+            color: #c2185b;
+            margin-bottom: 10px;
+        }
+        .gallery img {
+            width: 220px;
+            margin: 8px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>С Днём Рождения, Мама 💐</h1>
+
+<button onclick="showMessage()">Открыть письмо от меня 💌</button>
+
+<div id="letter" class="message">
+    <p><strong>Мамочка, с Днём Рождения ❤️</strong></p>
+    <p>Я хочу, чтобы ты знала — всё хорошее во мне началось с тебя.
+    Твоя забота, терпение, доброта и сила каждый день дают мне опору.</p>
+    <p>Спасибо тебе за бессонные ночи, за поддержку в трудные моменты,
+    за веру в меня даже тогда, когда я сам(а) в себя не верил(а).</p>
+    <p>Пусть впереди будет много спокойных, светлых и радостных дней.
+    Пусть здоровье будет крепким, сердце — спокойным,
+    а рядом всегда будут люди, которые любят тебя так же сильно, как я.</p>
+    <p><strong>Я тебя очень люблю 💖</strong></p>
+</div>
+
+<button onclick="document.getElementById('music').play()">
+    Включить любимую песню 🎵
+</button>
+
+<h2>Наша история в фотографиях 📸</h2>
+
+<!-- ===== ГОДА ===== -->
+
+<div class="year-section">
+    <div class="year-title">2025 год</div>
+    <div class="gallery">
+        <img src="2025/photo1.jpg">
+        <img src="2025/photo2.jpg">
+	<img src="2025/photo3.jpg">
+	<img src="2025/photo4.jpg">
+	<img src="2025/photo5.jpg">
+    </div>
+</div>
+
+<div class="year-section">
+    <div class="year-title">2024 год</div>
+    <div class="gallery">
+        <img src="2024/photo1.jpg">
+        <img src="2024/photo2.jpg">
+	<img src="2024/photo3.jpg">
+	<img src="2024/photo4.jpg">
+	<img src="2024/photo5.jpg">
+    </div>
+</div>
+
+<div class="year-section">
+    <div class="year-title">2023 год</div>
+    <div class="gallery">
+        <img src="2023/photo1.jpg">
+        <img src="2023/photo2.jpg">
+	<img src="2023/photo3.jpg">
+	<img src="2023/photo4.jpg">
+	<img src="2023/photo5.jpg">
+    </div>
+</div>
+
+<div class="year-section">
+    <div class="year-title">2022 год</div>
+    <div class="gallery">
+        <img src="2022/photo1.jpg">
+        <img src="2022/photo2.jpg">
+	<img src="2022/photo3.jpg">
+	<img src="2022/photo4.jpg">
+	<img src="2022/photo5.jpg">
+    </div>
+</div>
+
+<div class="year-section">
+    <div class="year-title">2021 год</div>
+    <div class="gallery">
+        <img src="2021/photo1.jpg">
+        <img src="2021/photo2.jpg">
+	<img src="2021/photo3.jpg">
+	<img src="2021/photo4.jpg">
+	<img src="2021/photo5.jpg">
+    </div>
+</div>
+
+<footer>
+    Сделано с любовью 💖
+	от Эрика, 12.02.2026
+</footer>
+
+<audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function showMessage() {
+    document.getElementById('letter').classList.add('show');
+}
+</script>
+
+</body>
+</html>
